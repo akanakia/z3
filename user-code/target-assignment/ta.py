@@ -7,7 +7,8 @@ Created on Tue Jun 09 16:19:26 2015
 
 from z3 import *
 
-vars = [None] * 2;
+vars = [None for _ in range(2)]
+
 vars[0] = Real('x' + str(0))
 vars[1] = Real('x' + str(1))
 
